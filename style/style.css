@@ -1,0 +1,228 @@
+/* CSS dari file style.css Anda */
+body {
+    background-image: url('../component/background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.navigasi {
+    width: 1180px;
+    height: 60px;
+    margin-top: 36px;
+    margin-left: 135px;
+    border-radius: 40px;
+    background-color: #33B9AC;
+}
+
+.navbar-brand {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    margin-left: 30px;
+}
+
+.nav-teks{
+    margin-left: 20px;
+    margin-bottom: auto;
+    font-family: 'Inter', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 63px; /* Jarak antara item menu */
+}
+.menu li:last-child {
+    margin-right: 50px; 
+    margin-bottom: 10px;
+
+}
+.menu li a.child {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    transition: color 0.3s;
+    margin-bottom: auto;
+    align-items: center;
+}
+
+.masuk {
+    width: 120px;
+    height: 36px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 40px;
+}
+.last-child {
+    color: #33B9AC;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: normal;
+    transition: color 0.3s;
+}
+
+.title {
+    margin-top: 88px;
+    margin-left: 135px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #33B9AC;
+}
+ .title p {
+    margin-top: 24px;
+    color: black;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+ }
+ .title p span{
+    color: #33B9AC;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+ }
+
+ .header-button{
+    margin-top: 36px;
+ }
+
+ .header-button div.col{
+    width: 300px;
+    height: 57px;
+    align-content: center;
+ }
+ .header-button div.col.right {
+    background-color: #33B9AC;
+    border-radius: 20px;
+ }
+ .header-button div.col.left {
+    border: 1px solid #33B9AC;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: 24px;
+ }
+ .header-button div.col.right a {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+ }
+ .header-button div.col.left a {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #33B9AC;
+ }
+main div.content {
+    margin-top: 40%;
+}
+main div.content article center h2 {
+    color: #33B9AC;
+    font-family: 'Poppins', sans-serif;
+}
+main div.content article center p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-top: 17px;
+}
+main div.content article center p span {
+    color: #33B9AC;
+}
+.content-button{
+    width: 300px;
+    height: 54px;
+    background-color: #33B9AC;
+    border-radius: 25px;
+}
+.content-button div.col a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    align-items: center;
+    justify-items: center;
+}
+main div.content-card{
+    margin-top: 160px;
+}
+
+main div.content-card h2 span {
+    color: #33B9AC;
+}
+.card-body h4 {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.card-img-top {
+    width: 300px;
+    height: 300px;
+}
+.card-text {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Responsiveness menggunakan Bootstrap */
+/* Responsiveness menggunakan media queries */
+@media (max-width: 1199.98px) {
+    .navigasi {
+        width: 100%;
+        padding: 0 20px;
+        margin-left: 0; /* Menghapus margin kiri */
+    }
+    .title {
+        margin-left: 20px;
+        font-size: 36px; /* Mengurangi ukuran font untuk judul */
+    }
+}
+
+@media (max-width: 991.98px) {
+    .menu li {
+        margin-right: 10px; /* Mengurangi jarak antara item menu */
+    }
+}
+
+@media (max-width: 767.98px) {
+    .title {
+        font-size: 24px; /* Mengurangi ukuran font untuk judul */
+    }
+    .header-button div.col {
+        width: 100%; /* Mengisi lebar layar penuh */
+        margin-top: 10px; /* Memberikan sedikit jarak di atas tombol */
+    }
+    .header-button div.col.left {
+        margin-left: 0; /* Menghapus margin kiri pada tombol */
+    }
+}
+
